@@ -1,0 +1,44 @@
+<body>
+  <header class="custom-header">
+    <img src="icons/icon.png" alt="Icon" class="header-icon" />
+    <span class="header-title">Screen Tuner</span>
+  </header>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screen Tuner</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+  <main class="container">
+    <form id="filter-controls">
+      <div class="control-group">
+        <label for="brightness">Brightness <span id="brightness-value">100%</span></label>
+        <input type="range" id="brightness" min="50" max="150" value="100" />
+      </div>
+      <div class="control-group">
+        <label for="contrast">Contrast <span id="contrast-value">100%</span></label>
+        <input type="range" id="contrast" min="50" max="150" value="100" />
+      </div>
+      <div class="control-group">
+        <label for="grayscale">Grayscale <span id="grayscale-value">0%</span></label>
+        <input type="range" id="grayscale" min="0" max="100" value="0" />
+      </div>
+      <div class="control-group">
+        <label for="sepia">Sepia <span id="sepia-value">0%</span></label>
+        <input type="range" id="sepia" min="0" max="100" value="0" />
+      </div>
+      <div class="control-group">
+        <label for="invert">Invert <span id="invert-value">0%</span></label>
+        <input type="range" id="invert" min="0" max="100" value="0" />
+      </div>
+      <div class="button-group">
+        <label class="switch">
+          <input type="checkbox" id="toggle-extension">
+          <span class="slider"></span>
+        </label>
+        <button type="button" id="reset-button">Reset</button>
+      </div>
+    </form>
+  </main>
+  <script src="popup.js"></script>
+</body>
